@@ -6,10 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/EP1_Tourett.unity
+    path: Assets/Scenes/Episode 1/EP1_Tourett.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/EP1_Mind.unity
+    path: Assets/Scenes/Episode 1/EP1_Mind.unity
     guid: fb2c39f98eb31ab45b0fdd2638d2fb76
+  - enabled: 1
+    path: Assets/Scenes/Episode 2/EP2_Mind_2.unity
+    guid: b03dacdd251fe864ba4dbec5c7fdcdc9
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 2ea68e328b9896345b249167d5c7c22b, type: 2}
