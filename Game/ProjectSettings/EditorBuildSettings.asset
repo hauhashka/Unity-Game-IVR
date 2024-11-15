@@ -6,13 +6,43 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Entry.unity
+    guid: f447cc6cde9be3d49885d5a100ee6ecd
+  - enabled: 1
     path: Assets/Scenes/Episode 1/EP1_Tourett.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    guid: e8763cc4bc003d643beb137e6c88cb1f
   - enabled: 1
     path: Assets/Scenes/Episode 1/EP1_Mind.unity
     guid: fb2c39f98eb31ab45b0fdd2638d2fb76
   - enabled: 1
+    path: Assets/Scenes/Episode 1/EP1_Ending.unity
+    guid: 6fe244aa0991d114e969bd349de4152f
+  - enabled: 1
+    path: Assets/Scenes/Episode 2/EP2_Brothers.unity
+    guid: cc0b40f4faa132b468ab0ea4a3009be2
+  - enabled: 1
+    path: Assets/Scenes/Episode 2/EP2_Mind.unity
+    guid: 2c5e83a135de1a545aa488c251585386
+  - enabled: 1
     path: Assets/Scenes/Episode 2/EP2_Mind_2.unity
     guid: b03dacdd251fe864ba4dbec5c7fdcdc9
+  - enabled: 1
+    path: Assets/Scenes/Episode 2/EP2_Mind_3.unity
+    guid: 4ec384152ad849248bc023fe2ba45549
+  - enabled: 1
+    path: Assets/Scenes/Episode 2/EP2_Ending.unity
+    guid: 9598fd40a8efe0f47a7649e6927a573d
+  - enabled: 1
+    path: Assets/Scenes/Episode 3/EP3_Hands.unity
+    guid: e7588ca3cdd78374c8439f189a4696f9
+  - enabled: 1
+    path: Assets/Scenes/Episode 3/EP3_Mind.unity
+    guid: 07e6688e88ebe79409bd5c4cb793dada
+  - enabled: 1
+    path: Assets/Scenes/Episode 3/EP3_Mind_2.unity
+    guid: 7a328af81d2d50d438c8ad12169112a0
+  - enabled: 1
+    path: Assets/Scenes/Episode 3/EP3_Ending.unity
+    guid: f874494cb19618443a2f6f34db48653a
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 2ea68e328b9896345b249167d5c7c22b, type: 2}

@@ -5,9 +5,11 @@ using TMPro;
 using UnityEngine.UI;
 using Ink.Runtime;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour
 {
+    [SerializeField] int _nextscene;
     [Header("Params")]
     [SerializeField] private float typingSpeed = 0.04f;
 
@@ -131,22 +133,29 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    private void Update() 
+    private void Update()
     {
         // return right away if dialogue isn't playing
-        if (!dialogueIsPlaying) 
+        if (!dialogueIsPlaying)
         {
-            return;
+            StartCoroutine(New_scene());
+
         }
 
         // handle continuing to the next line in the dialogue when submit is pressed
         // NOTE: The 'currentStory.currentChoiecs.Count == 0' part was to fix a bug after the Youtube video was made
-        if (canContinueToNextLine 
-            && currentStory.currentChoices.Count == 0 
+        if (canContinueToNextLine
+            && currentStory.currentChoices.Count == 0
             && InputManager.GetInstance().GetSubmitPressed())
         {
             ContinueStory();
         }
+    }
+
+    private IEnumerator New_scene()
+    {
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene(_nextscene);
     }
 
     public void EnterDialogueMode(TextAsset inkJSON, Animator emoteAnimator) 
